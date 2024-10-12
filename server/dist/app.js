@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // import express, { Request, Response } from 'express';
 // export const app = express();
 // const PORT = process.env.PORT || 3001;
