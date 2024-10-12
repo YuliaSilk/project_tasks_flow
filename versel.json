@@ -9,12 +9,18 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/dist/app.js" 
+      "dest": "/" 
     }
   ],
   "build": {
     "env": {
       "NODE_ENV": "production"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/app.ts"
+    }
+  ]
 }
