@@ -2,17 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/**/*",
+      "src": "app.ts",
       "use": "@vercel/static-build",
       "config": {
-        "output": "public"
+        "output": "dist"
       }
     }
   ],
   "routes": [
     {
-      "src": "src/(.*)",
-      "dest": "src/$1"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ]
 }
